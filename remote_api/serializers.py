@@ -11,13 +11,18 @@ class UserSeializer(serializers.ModelSerializer):
 
 class TeamSerializer(serializers.ModelSerializer):
     members = serializers.PrimaryKeyRelatedField(
-        queryset = get_user_model().objects.all(),
+        queryset=get_user_model().objects.all(),
         many=True
     )
 
     class Meta:
         model = Team
-        fields = ['name', 'members']
+        fields = ['id', 'name', 'members']
+        extra_kwargs = {
+            'id': {
+                'read_only': True
+            }
+        }
 
     def to_representation(self, instance):
         representation = super().to_representation(instance)
@@ -29,14 +34,17 @@ class TeamSerializer(serializers.ModelSerializer):
 class ProjectSerializer(serializers.ModelSerializer):
     teams = serializers.PrimaryKeyRelatedField(
         queryset=Team.objects.all(),
-        many=True
+        many=True,
     )
 
     class Meta:
         model = Project
-        exclude = ['created_by']
+        fields = '__all__'
         extra_kwargs = {
             'created_date': {
+                'read_only': True
+            },
+            'created_by': {
                 'read_only': True
             }
         }
@@ -45,7 +53,8 @@ class ProjectSerializer(serializers.ModelSerializer):
 class TaskSerializer(serializers.ModelSerializer):
     assigned_to = serializers.PrimaryKeyRelatedField(
         queryset=get_user_model().objects.all(),
-        many=True
+        many=True,
+        allow_null=True
     )
     project = serializers.PrimaryKeyRelatedField(
         queryset=Project.objects.all(),
@@ -54,7 +63,10 @@ class TaskSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Task
-        fields = ['title','description','status','assigned_to','project']
+        fields = ['title', 'description', 'status', 'assigned_to', 'project']
+        extra_kwargs = {'project': {
+            'write_only': True
+        }}
 
 
 class FeedbackSerializer(serializers.ModelSerializer):
