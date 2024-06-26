@@ -12,3 +12,6 @@ class IsAuthorOrReadOnly(permissions.BasePermission):
                 return True
             else:
                 return False
+        else:
+            if request.user == obj.created_by:
+                return True
