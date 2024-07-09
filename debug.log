@@ -3947,3 +3947,6 @@ Watching for file changes with StatReloader
 Unauthorized: /auth/token/
 Not Found: /favicon.ico
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /projects/
+Bad Request: /project/
