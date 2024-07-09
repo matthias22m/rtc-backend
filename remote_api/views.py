@@ -6,6 +6,7 @@ from .serializers import TeamSerializer, ProjectSerializer, TaskSerializer, Feed
 from .models import Team, Project, Task, Feedback, TeamInvitation
 from .permissions import IsAuthorOrReadOnly
 from django.contrib.auth import get_user_model
+from rest_framework import filters
 
 UserModel = get_user_model()
 
@@ -44,6 +45,8 @@ class ProjectViewSet(viewsets.ModelViewSet):
 
     serializer_class = ProjectSerializer
     permission_classes = (IsAuthenticated, IsAuthorOrReadOnly,)
+    filter_backends = [filters.SearchFilter]
+    search_fields = ['title','description']
 
 
 class TaskViewSet(viewsets.ModelViewSet):
