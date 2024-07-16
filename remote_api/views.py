@@ -46,20 +46,30 @@ class ProjectViewSet(viewsets.ModelViewSet):
     serializer_class = ProjectSerializer
     permission_classes = (IsAuthenticated, IsAuthorOrReadOnly,)
     filter_backends = [filters.SearchFilter]
-    search_fields = ['title','description']
+    search_fields = ['title', 'description']
 
 
 class TaskViewSet(viewsets.ModelViewSet):
-    queryset = Task.objects.all()
     serializer_class = TaskSerializer
     permission_classes = (IsAuthenticated,)
 
+    def get_queryset(self):
+        return Task.objects.filter(project_id=self.kwargs['project_pk'])
+
+    def get_serializer_context(self):
+        return {'project_id': self.kwargs['project_pk']}
+
 
 class FeedbackViewSet(viewsets.ModelViewSet):
-    queryset = Feedback.objects.all()
     serializer_class = FeedbackSerializer
     permission_classes = (IsAuthenticated,)
-
+    def get_queryset(self):
+        return Feedback.objects.filter(project_id=self.kwargs['project_pk'])
+    
+    def get_serializer_context(self):
+        return {'project_id': self.kwargs['project_pk']}
+    def perform_create(self, serializer):
+        serializer.save(created_by=self.request.user)
 
 class TeamsInProjectViewSet(viewsets.ReadOnlyModelViewSet):
     permission_classes = [IsAuthenticated]

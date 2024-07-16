@@ -5701,3 +5701,575 @@ C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views
 Watching for file changes with StatReloader
 C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
 Watching for file changes with StatReloader
+Internal Server Error: /projects/1/tasks/
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 57, in get_queryset
+    Task.objects.filter(project_id=self.kwargs['project_id'])
+KeyError: 'project_id'
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /projects/1/tasks/
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 57, in get_queryset
+    Task.objects.filter(project=self.kwargs['project_id'])
+KeyError: 'project_id'
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /projects/1/tasks/
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 57, in get_queryset
+    Task.objects.filter(project_id=self.kwargs['project_pk'])
+KeyError: 'project_pk'
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /projects/1/tasks/
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 57, in get_queryset
+    return super().get_queryset()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+AssertionError: 'TaskViewSet' should either include a `queryset` attribute, or override the `get_queryset()` method.
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /projects/4/tasks/2/
+Not Found: /projects/40/tasks/1/
+Not Found: /projects/4/tasks/1/
+Unsupported Media Type: /projects/4/tasks/3/
+Unsupported Media Type: /projects/4/tasks/3/
+Unsupported Media Type: /projects/4/tasks/3/
+Internal Server Error: /projects/4/tasks/3
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/projects/4/tasks/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Unsupported Media Type: /projects/4/tasks/3/
+Bad Request: /projects/4/tasks/3/
+Bad Request: /projects/4/tasks/3/
+Not Found: /projects/4/tasks/3/
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /projects/1/feedbacks/
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 442, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 495, in to_internal_value
+    for field in fields:
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 378, in _writable_fields
+    for field in self.fields.values():
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 1079, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 1175, in get_field_names
+    assert field_name in fields, (
+AssertionError: The field 'project' was declared on serializer FeedbackSerializer, but has not been included in the 'fields' option.
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /projects/1/feedbacks/
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 442, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 495, in to_internal_value
+    for field in fields:
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 378, in _writable_fields
+    for field in self.fields.values():
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 1079, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 1175, in get_field_names
+    assert field_name in fields, (
+AssertionError: The field 'project' was declared on serializer FeedbackSerializer, but has not been included in the 'fields' option.
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /projects/1/feedbacks/
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 442, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 495, in to_internal_value
+    for field in fields:
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 378, in _writable_fields
+    for field in self.fields.values():
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 1079, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 1175, in get_field_names
+    assert field_name in fields, (
+AssertionError: The field 'project' was declared on serializer FeedbackSerializer, but has not been included in the 'fields' option.
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /projects/1/feedbacks/
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py", line 113, in create
+    created_by=self.user.user
+AttributeError: 'FeedbackSerializer' object has no attribute 'user'
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /projects/1/feedbacks/
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py", line 113, in create
+    created_by=self.request.user
+AttributeError: 'FeedbackSerializer' object has no attribute 'request'
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
