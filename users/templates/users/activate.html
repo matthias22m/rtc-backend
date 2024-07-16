@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User activation</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('activate').onsubmit = (event)=>{
+                event.preventDefault();
+                console.log('{{token}}')
+                const confirmForm = document.getElementById('activate')
+                const formData = new FormData(confirmForm);
+                formData.append('uid', '{{uid}}');
+                formData.append('token', '{{token}}');
+                
+                fetch('http://127.0.0.1:8000/auth/users/activation/', {
+                    method: 'POST',
+                    body: formData
+                }).then(response => {
+                    if (response.ok) {
+                        alert('Activation successful!');
+                    } else {
+                        alert('Activation failed!');
+                    }
+                }).catch(error => {
+                    console.error('Error:', error);
+                    alert('Activation failed!');
+                });
+
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Confirm Activation!</h1>
+    
+    <form id="activate" method="post" action="">
+        {% csrf_token %}
+        <button type="submit">Confirm</button>
+    </form>
+</body>
+</html>

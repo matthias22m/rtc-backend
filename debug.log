@@ -4273,3 +4273,1431 @@ C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_team_cola
 Watching for file changes with StatReloader
 C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_team_colab\urls.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /auth/users/
+Internal Server Error: /auth/users/
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\files\storage\handler.py", line 35, in __getitem__
+    return self._storages[alias]
+KeyError: 'default'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\files\storage\handler.py", line 38, in __getitem__
+    params = self.backends[alias]
+KeyError: 'default'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\djoser\views.py", line 134, in perform_create
+    user = serializer.save(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\users\serializers.py", line 38, in create
+    instance.save()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\base.py", line 924, in save_base
+    post_save.send(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\dispatch\dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\users\signals.py", line 10, in create_profile
+    Profile.objects.create(user=instance)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\users\models.py", line 25, in save
+    img = Image.open(self.image.path)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\files.py", line 62, in path
+    return self.storage.path(self.name)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\utils\functional.py", line 251, in inner
+    self._setup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\files\storage\__init__.py", line 42, in _setup
+    self._wrapped = storages[DEFAULT_STORAGE_ALIAS]
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\files\storage\handler.py", line 40, in __getitem__
+    raise InvalidStorageError(
+django.core.files.storage.handler.InvalidStorageError: Could not find config for 'default' in settings.STORAGES.
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_team_colab\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /auth/users/
+Internal Server Error: /auth/users/
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\djoser\views.py", line 142, in perform_create
+    settings.EMAIL.activation(self.request, context).send(to)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\templated_mail\mail.py", line 78, in send
+    super(BaseEmailMessage, self).send(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\mail\backends\smtp.py", line 86, in open
+    self.connection = self.connection_class(
+  File "C:\Users\hhhhhp\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\hhhhhp\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\hhhhhp\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\Users\hhhhhp\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\Users\hhhhhp\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_team_colab\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /admin/core/user/1/change/
+Bad Request: /auth/users/
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_team_colab\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_team_colab\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_team_colab\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\users\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\users\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_team_colab\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_team_colab\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_team_colab\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_team_colab\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /auth/users/
+Not Found: /activate/MjI/ca7jmu-addf0333792e147b2ac65ef59148df4f
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\users\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /activate/MjI/ca7jmu-addf0333792e147b2ac65ef59148df4f/
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'chat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\users\views.py", line 43, in get
+    return render(request, 'users/activate.html', {'uid':uid,'token':token })
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'chat' is not a registered namespace
+Method Not Allowed (POST): /activate/MjI/ca7jmu-addf0333792e147b2ac65ef59148df4f/
+Method Not Allowed: /activate/MjI/ca7jmu-addf0333792e147b2ac65ef59148df4f/
+Method Not Allowed (POST): /activate/MjM/ca7l1f-c25538415fdf85c7798f4b19937c2daf/
+Method Not Allowed: /activate/MjM/ca7l1f-c25538415fdf85c7798f4b19937c2daf/
+Not Found: /activate/MjM/ca7l1f-c25538415fdf85c7798f4b19937c2daf/users/activation/
+Not Found: /users/activation/
+Bad Request: /auth/users/activation/
+Bad Request: /auth/users/activation/
+Bad Request: /auth/users/activation/
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+view's ProjectViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 41, in get_queryset
+    return Project.objects.filter(Q(teams__members=user) | Q(created_by=user)).distinct()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000026A8ADF3190>.
+view's TeamInvitationViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 33, in get_queryset
+    return TeamInvitation.objects.filter(Q(user=user))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000026A8ADF3190>.
+view's ProjectViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 41, in get_queryset
+    return Project.objects.filter(Q(teams__members=user) | Q(created_by=user)).distinct()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000026A8ADF3190>.
+view's TeamInvitationViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 33, in get_queryset
+    return TeamInvitation.objects.filter(Q(user=user))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000026A8ADF3190>.
+view's ProjectViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 41, in get_queryset
+    return Project.objects.filter(Q(teams__members=user) | Q(created_by=user)).distinct()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000026A8ADF3190>.
+view's TeamInvitationViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 33, in get_queryset
+    return TeamInvitation.objects.filter(Q(user=user))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000026A8ADF3190>.
+view's ProjectViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 41, in get_queryset
+    return Project.objects.filter(Q(teams__members=user) | Q(created_by=user)).distinct()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000026A8ADF3190>.
+view's TeamInvitationViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 33, in get_queryset
+    return TeamInvitation.objects.filter(Q(user=user))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000026A8ADF3190>.
+Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 45, in get_operation
+    responses = self.get_responses()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 180, in get_responses
+    response_serializers = self.get_response_serializers()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 235, in get_response_serializers
+    responses = self.get_default_responses()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 211, in get_default_responses
+    default_schema = self.serializer_to_schema(default_schema) or ''
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 438, in serializer_to_schema
+    return self.probe_inspectors(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\field.py", line 38, in get_schema
+    return self.probe_field_inspectors(serializer, openapi.Schema, self.use_definitions)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 228, in probe_field_inspectors
+    return self.probe_inspectors(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\field.py", line 137, in field_to_swagger_object
+    raise SwaggerGenerationError(
+drf_yasg.errors.SwaggerGenerationError: Schema for <class 'users.serializers.UserSerializer'> would override distinct serializer <class 'remote_api.serializers.UserSerializer'> because they implicitly share the same ref_name; explicitly set the ref_name attribute on both serializers' Meta classes
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\users\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\users\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+view's ProjectViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 41, in get_queryset
+    return Project.objects.filter(Q(teams__members=user) | Q(created_by=user)).distinct()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000028C3D526050>.
+view's TeamInvitationViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 33, in get_queryset
+    return TeamInvitation.objects.filter(Q(user=user))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000028C3D526050>.
+view's ProjectViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 41, in get_queryset
+    return Project.objects.filter(Q(teams__members=user) | Q(created_by=user)).distinct()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000028C3D526050>.
+view's TeamInvitationViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 33, in get_queryset
+    return TeamInvitation.objects.filter(Q(user=user))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000028C3D526050>.
+view's ProjectViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 41, in get_queryset
+    return Project.objects.filter(Q(teams__members=user) | Q(created_by=user)).distinct()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000028C3D526050>.
+view's TeamInvitationViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 33, in get_queryset
+    return TeamInvitation.objects.filter(Q(user=user))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000028C3D526050>.
+view's ProjectViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 41, in get_queryset
+    return Project.objects.filter(Q(teams__members=user) | Q(created_by=user)).distinct()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000028C3D526050>.
+view's TeamInvitationViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 33, in get_queryset
+    return TeamInvitation.objects.filter(Q(user=user))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000028C3D526050>.
+Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 45, in get_operation
+    responses = self.get_responses()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 180, in get_responses
+    response_serializers = self.get_response_serializers()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 235, in get_response_serializers
+    responses = self.get_default_responses()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\view.py", line 211, in get_default_responses
+    default_schema = self.serializer_to_schema(default_schema) or ''
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 438, in serializer_to_schema
+    return self.probe_inspectors(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\field.py", line 38, in get_schema
+    return self.probe_field_inspectors(serializer, openapi.Schema, self.use_definitions)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 228, in probe_field_inspectors
+    return self.probe_inspectors(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\field.py", line 137, in field_to_swagger_object
+    raise SwaggerGenerationError(
+drf_yasg.errors.SwaggerGenerationError: Schema for <class 'users.serializers.UserSerializer'> would override distinct serializer <class 'remote_api.serializers.UserSerializer'> because they implicitly share the same ref_name; explicitly set the ref_name attribute on both serializers' Meta classes
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\users\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+view's ProjectViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 41, in get_queryset
+    return Project.objects.filter(Q(teams__members=user) | Q(created_by=user)).distinct()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000019D89BE7FD0>.
+view's TeamInvitationViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 33, in get_queryset
+    return TeamInvitation.objects.filter(Q(user=user))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000019D89BE7FD0>.
+view's ProjectViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 41, in get_queryset
+    return Project.objects.filter(Q(teams__members=user) | Q(created_by=user)).distinct()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000019D89BE7FD0>.
+view's TeamInvitationViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 33, in get_queryset
+    return TeamInvitation.objects.filter(Q(user=user))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000019D89BE7FD0>.
+view's ProjectViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 41, in get_queryset
+    return Project.objects.filter(Q(teams__members=user) | Q(created_by=user)).distinct()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000019D89BE7FD0>.
+view's TeamInvitationViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 33, in get_queryset
+    return TeamInvitation.objects.filter(Q(user=user))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000019D89BE7FD0>.
+view's ProjectViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 41, in get_queryset
+    return Project.objects.filter(Q(teams__members=user) | Q(created_by=user)).distinct()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000019D89BE7FD0>.
+view's TeamInvitationViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\contrib\auth\models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\drf_yasg\inspectors\base.py", line 42, in call_view_method
+    return view_method()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py", line 33, in get_queryset
+    return TeamInvitation.objects.filter(Q(user=user))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000019D89BE7FD0>.
+Watching for file changes with StatReloader
+Not Found: /auth/token/
+Unauthorized: /projects/
+Unauthorized: /projects/
+Unauthorized: /projects/
+Not Found: /projects/1/project-tasks
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hhhhhp\Documents\Programing\Backend\django\rtc-backend\remote_api\views.py changed, reloading.
+Watching for file changes with StatReloader

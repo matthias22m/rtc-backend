@@ -23,6 +23,7 @@ class UserSerializer(serializers.ModelSerializer):
         extra_kwargs = {
             'password': {'write_only': True}
         }
+        ref_name = 'UserSerializer_users'
 
     def to_representation(self, instance):
         representation = super().to_representation(instance)
@@ -35,6 +36,7 @@ class UserSerializer(serializers.ModelSerializer):
         instance = self.Meta.model(**validated_data)
         if password is not None:
             instance.set_password(password)
+        instance.is_active=False
         instance.save()
 
         return instance

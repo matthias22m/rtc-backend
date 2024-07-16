@@ -28,7 +28,8 @@ SECRET_KEY = 'django-insecure-p6@^g%x%il(b0-$wp^knkeuvwq2^5r+-o0&#@h^l#0xsh$5%%c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '10.240.68.87','192.168.8.28','rtc-backend-l58m.onrender.com', 'yourhostname.local']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '10.240.68.87',
+                 '192.168.8.28', 'rtc-backend-l58m.onrender.com', 'yourhostname.local']
 CORS_ALLOW_ALL_ORIGINS = True
 
 # Application definition
@@ -43,7 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'drf_yasg',
     'rest_framework',
-    'users.apps.UsersConfig',
+    'djoser',
+    'users',
     'remote_api',
     'rest_framework_simplejwt',
     'corsheaders',
@@ -119,7 +121,20 @@ SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(weeks=5),
     "REFRESH_TOKEN_LIFETIME": timedelta(weeks=10),
 
-    "AUTH_HEADER_TYPES": ("Bearer",),
+    "AUTH_HEADER_TYPES": ("JWT",),
+}
+
+DJOSER = {
+    'LOGIN_FIELD': 'email',
+    'PASSWORD_RESET_CONFIRM_URL': 'password/reset/confirm/{uid}/{token}',
+    'USERNAME_RESET_CONFIRM_URL': 'username/reset/confirm/{uid}/{token}',
+    'ACTIVATION_URL': 'activate/{uid}/{token}',
+    'SEND_ACTIVATION_EMAIL': True,
+    'SERIALIZERS': {
+        "user_create": "users.serializers.UserSerializer",
+        "user": "users.serializers.UserSerializer",
+        "current_user": "users.serializers.UserSerializer"
+    },
 }
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
@@ -131,15 +146,15 @@ DATABASES = {
     }
 }
 
-STORAGES = {
-    "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-    },
-}
+# STORAGES = {
+#     "staticfiles": {
+#         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+#     },
+# }
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_HOST = "https://d4663kmspf1sqa.cloudfront.net" if not DEBUG else ""
 STATIC_URL = STATIC_HOST + "/static/"
-# STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -177,10 +192,17 @@ USE_TZ = True
 
 # STATIC_URL = 'static/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'pass22reset@gmail.com'
+EMAIL_HOST_PASSWORD = 'vapszwhhddetcneg'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
