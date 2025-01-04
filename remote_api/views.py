@@ -24,7 +24,7 @@ class TeamViewSet(viewsets.ModelViewSet):
 
 
 class TeamInvitationViewSet(viewsets.ModelViewSet):
-    queryset = TeamInvitation.objects.all()
+    # queryset = TeamInvitation.objects.all()
     serializer_class = TeamInvitationSerializer
     permission_classes = (IsAuthenticated,)
 

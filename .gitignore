@@ -1,3 +1,5 @@
 
 .venv
 staticfiles
+__pycache__/
+debug.log
